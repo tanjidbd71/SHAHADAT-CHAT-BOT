@@ -1,50 +1,54 @@
 module.exports.config = {
- name: "war",
- version: "1.0.0",
- hasPermssion: 2,
- credits: "Shahadat SAHU",
- description: "গালি টু গালি",
- commandCategory: "group",
- usages: "prefix+war",
- cooldowns: 2,
- dependencies: {
- "fs-extra": "",
- "axios": ""
- }
+    name: "war",
+    version: "1.0.0",
+    hasPermssion: 2,
+    credits: "... - Long LTD",
+    description: "War nÃ¡t cÃ¡i boxchat",
+    commandCategory: "group",
+    usages: "war Ä‘áº­m cháº¥t",
+    cooldowns: 10,
+    dependencies: {
+        "fs-extra": "",
+        "axios": ""
+    }
 }
 
 module.exports.run = async function({ api, args, Users, event}) {
  var mention = Object.keys(event.mentions)[0];
- let name = event.mentions[mention];
- var arraytag = [];
- arraytag.push({id: mention});
- 
- var a = function (a) { api.sendMessage(a, event.threadID); }
- 
- a("সাহু কে যে গালি দিবি তার আম্মু রে চুদি মাগির পোলা !");
- setTimeout(() => {a({body: "এই মুরগি খাংকির পোলা সাহু তর আম্মুর বাতার লাগে বাস্ট্রাডের বাচ্ছা গালি বাজ হয়ে গেসিস" })}, 3000);
- setTimeout(() => {a({body: "তর মত গালি বাজ আমি ৩৬৫ দিন চুদি মাগির পোলা"})}, 5000);
- setTimeout(() => {a({body: "এই মুরগি শুন তর আম্মু রে চুদি আচার এর লোভ দেখিয়ে 😋😋" })}, 7000);
- setTimeout(() => {a({body: "কিরে বস্তির পোলা তর আম্মু রে তর দুলাভাই এর কান্দে ফেলে আর তর কচি বোন রে তর বাপের কান্দে রেখে চুদি উফফফ " })}, 9000);
- setTimeout(() => {a({body: "খাংকির পোলা তুইই সাহু কে গালি দেস তুই তো রাস্তার পতিতার পুত ছোডো ভাই তর আম্মু রে টুস করে চুদে দিয়ে দূর দিভো 🐒🙈?" })}, 12000);
- setTimeout(() => {a({body: "জারজ মাগির পোলা তর কচি বোনের ভুদায় উম্মম্মম্মম্মা 😋। ওয়াক থু তর বোনের ভুদায় গন্ধ কাইল্লা মাগির পুত 🤬🤬" })}, 15000);
- setTimeout(() => {a({body: "কিরে ফকিন্নি মাগীর পোলা,মুরগী তোর মায়ের চুদতে চুদতে নিয়া যামু তুর্কী,,তুর্কীকে আছে নাকি কী মামু,,তোর বোনের কচি" })}, 17000);
- setTimeout(() => {a({body: "আমি সাহু 👉করলাম শুরু তোর মার পুটকিতে ডুকামু ২টা গরু গরু নাকি ডাকে হাম্বা তোর মার ভোদায় ডুকামু ২টা ইলেক্ট্রিকের খাম্বা" })}, 20000);
- setTimeout(() => {a({body: "চুইদ্দা তোর মার বোদা দিয়া বাইর করমু রক্ত রক্তের কালার যদি হয় লাল তোর মারে চুদবো মেন্টাল ক চিরকাল শুয়ারের বাচচা" })}, 23000);
- setTimeout(() => {a({body: "তর আম্মু রে আমি চুদি রাস্তায় চুদে বাঘ চুদে বনে তোর মায়ের কালা ভোদা চুদমু আমি ঘরের এক কনে 👒শুয়ারের বাচ্চা।গালি দেস সাহু রে কত সাহস" })}, 25000);
- setTimeout(() => {a({body: "আমি গালি জানি না গালি গেছি ভুইলা তোর মায়ের চুদমু uছায়া বেলাউুজ খুইলা,,তোর আাবল জাতের মায়ের চুদি খাংকির পোলা " })}, 28500);
- setTimeout(() => {a({body: "তোর মা বোনের ভোদায় শুটকি মাছের গন্ধ তোর মায়ের চুইদা অনলাইনের করমু অন্ধ " })}, 31000);
- setTimeout(() => {a({body: "অন্ধ হইয়া অনলাইনে করবি ভিখায় তোর মায়ের চুইদা অনলাইনে দিমু শিখায়?" })}, 36000);
- setTimeout(() => {a({body: "মাহফুজ কে গালি চুদাস মাগির পো খাংকির পোলা খাংকির পোলা তর মায়্রে চুদি খাংকির পোলা" })}, 39000);
- setTimeout(() => {a({body: "খাংকির পোলা তোর hmm সাথে আড়ি তোর মায়েরে চুদতে চুদতে নিয়া যামু নানার বাড়ি,,সেখানে আছে ছাগল তোর মায়েরে চুদে রাস্তা রাম ছাগল,,ছাগলের আছে নাকি পশম,,তোর মায়ের ভোদার শয়তানের কসম বান্দির বাচ্ছা " })}, 40000);
- setTimeout(() => {a({body: "রাম চুদলাম লখোন চুদলাম চুদলাম হনুমান তোর মায়েরে অনলাইনে চুইদা হইছি গালিবাজ শুয়ারের বাচ্চা" })}, 65000);
- setTimeout(() => {a({body: "কিরে ফকিনি মাগীর পোলা তুই অনলাইনে করিস পতালি তোর মায়ের ভোদা ছিড়া দিমু জোরা তালি,,,শুয়োরের বাচ্চা" })}, 70000);
- setTimeout(() => {a({body: "তুই নাকি অনলাইনের কিং তোর মায়ের ভোদা মধ্যে বাজামু সাপের বিন,,বিনের তালে তালে চুদতে চুদতে নিয়া যামু খালে খালে নাই সাপ আমি তোর অবৈধ বাপ" })}, 75000);
- setTimeout(() => {a({body: "কিরে ফকিনি মাগীর পোলা তোর মায়ের ভোদা সিলেটি পুড়ি আমার চুদতে ভালো লাগে না ৮০বছরের বুড়ি 🙁😒 ফক্কিনি মাগির পোলা" })}, 80000);
- setTimeout(() => {a({body: "সাহু নাম যদি হয় রং তোর মা চুদার সময় অনেক করে ঢংক" })}, 85000);
- setTimeout(() => {a("ওয়ান টু থিরি তোর মায়ের ভোদা মধ্যে ধরাইলাম বিড়ি বিড়িতে নাই আগুন,,তোর মায়ের ভোদা মধ্যে দিমু বেগুন বেগুনে নাই বিচি তোর মায়েরচুদি মাগির পোলা 🤬")} , 90000);
- setTimeout(() => {a({body: "সাহু তর আব্বু মাথায় রাখবি মাগির পোলা লেভেল হীনé" })}, 95000);
- setTimeout(() => {a({body: "কিরে ফক্কিনির পোলা তর আম্মুর ভুদায় আজ কাঠাল ভেংগে খামু মাগির পো" })}, 100000);
- setTimeout(() => {a({body: "এই যে মাগির পোলা শুন তর আব্বুর নাম টা মনে রাখবি সাহু ওকে বান্দির পোলা গালি বাজ হয়ে গেসিস গালি তর আম্মুর ভুদা দিয়ে জত্ন করে বরে দিভো বান্দির পোলা " })}, 105000);
- setTimeout(() => {a({body: "মুরগি আব্বু ডাক ওকে সাহু তর রিয়েল পাপ্পা বাতিজা, 😒😒"})} , 115000);
-}
+    
+ let name =  event.mentions[mention];
+    var arraytag = [];
+        arraytag.push({id: mention});
+    var a = function (a) { api.sendMessage(a, event.threadID); }
+a("ginalit moko putanginamo ka walang iyakan ah bwakananginaka eh");
+setTimeout(() => {a({body: "gumagamit ka nalang bot ingay mo pa tanginaka ket nga siguro reboot ng cp mo di mo alam dami mong satsat ampota" })}, 3000);
+setTimeout(() => {a({body: "gawa ka bot mo tas isali mo sa maraming gc ewan ko di ka mag panic"})}, 5000);
+setTimeout(() => {a({body: "gago ampota palamunin" })}, 7000);
+setTimeout(() => {a({body: "pabigat sa pamilya tanginaka lagay mo na cp mo paluin ka mamaya di kapa nag hugas plato HAHAHAHA tanga ampota" })}, 9000);
+setTimeout(() => {a({body: "asa sa magulang feeling coolkid ang cool mo naman tanginamo pwede kana mamatay" })}, 12000);
+setTimeout(() => {a({body: "shempre mag rereply ka dito tanga ka eh alam mong bot kakausapin mo ulol kanaba?" })}, 15000);
+setTimeout(() => {a({body: "jejemon ka pa frfr HAHAHAHAHAHAHAHA putulin ko tite mo eh" })}, 17000);
+setTimeout(() => {a({body: "kaya pa ? baka mapahiya ka sa gc nyo leave kana block mo bot HAHAHAHAHA luha mo boi punasan mo na" })}, 20000);
+setTimeout(() => {a({body: "pumapatol sa bot yuucckkkk -nudes lng naman ambag 1 inch tite" })}, 23000);
+setTimeout(() => {a({body: "feeling expert ampota ket one name siguro di mo alam" })}, 25000);
+setTimeout(() => {a({body: "kaya paba pag naluluha kana stop na ah leave na awa ako sayo eh bata " })}, 28500);
+setTimeout(() => {a({body: "baka ikaw yung 16 years old na nag cocomment sabi ng minor ah ulol HAHAHAHAHA" })}, 31000);
+setTimeout(() => {a({body: "Walis kana ng bahay nyo tamo lilipad tsinelas sa mukha mo mamaya" })}, 36000);
+setTimeout(() => {a({body: "tanginaka ginigigil mo bot ko sarap mong i sidekick with recall putanginaka" })}, 39000);
+setTimeout(() => {a({body: "gulat ka no ? HAHAHAHA tanga ka kase d moto alam " })}, 40000);
+setTimeout(() => {a({body: "nagrereply ka palang minumura na kita tanginamo" })}, 65000);
+setTimeout(() => {a({body: "shempre rereply ka ule dito yakk ilalabas mo pagiging coolkid mo frfr istg" })}, 70000);
+setTimeout(() => {a({body: "baka pag in-english kita pati nanay mo mahimatay" })}, 75000);
+setTimeout(() => {a({body: "feeling famous nagmamakaawa i heart profile agoiiii HAHAHAHAHAA LT si tanga" })}, 80000);
+setTimeout(() => {a({body: "lakas maka myday pangit naman tuwang tuwa pa pag may nag heart napindot lng naman yak" })}, 85000);
+setTimeout(() => {a("face reveal nga baka puro sipon at luha kna ah HAAHHAHAHA iyakin ka eh")} , 90000);
+setTimeout(() => {a({body: "stop naba ako ? baka hiyang hiya kana sa sarili mo leave kana wala kang ambag sa gc nato" })}, 95000);
+setTimeout(() => {a({body: "wala kang masabi? malamang tanga ka gago ka putangina kang nigga ka HAHAHAHAHA " })}, 100000);
+setTimeout(() => {a({body: "feeling gwapo/maganda pag hinubad facemask mukhang tilapiang nakawala sa tubig ampota" })}, 105000);
+setTimeout(() => {a({body: "till next time gago bye na pasok kana sa aquarium mo bawal ka sa lupa mukha kang wtf"})} , 115000);
+
+
+
+
+  
+  }
